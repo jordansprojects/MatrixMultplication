@@ -5,7 +5,6 @@ let COLS = 3
 // random # generator
 let rnd = System.Random()
 
-// as said previously, this will be modifed so that it takes in data that is concurrently read from a file
 let generateMatrix() =
   let matrix = Array2D.init ROWS COLS (fun _ _ ->   rnd.Next(100))
   matrix
